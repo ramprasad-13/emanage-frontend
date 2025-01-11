@@ -1,0 +1,174 @@
+/* Navbar styles for responsive design */
+nav {
+  background: linear-gradient(135deg, #1f1f1f, #444);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /* Vertically center the items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo styles */
+nav .logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  display: flex;  /* Ensure it aligns properly with flexbox */
+  align-items: center;  /* Vertically center the logo */
+}
+
+nav .logo:hover {
+  color: #ff4d4d;
+}
+
+/* Menu container */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+  align-items: center; /* Vertically center the links */
+}
+
+nav ul li {
+  margin-left: 2rem;
+  display: flex;  /* Ensure the li elements are flex items */
+  align-items: center; /* Vertically center each item */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff4d4d;
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;  /* Ensure logout button aligns with flexbox */
+  align-items: center; /* Vertically center the button */
+}
+
+.logout-btn:hover {
+  background-color: #e04343;
+  transform: translateY(-3px);
+}
+
+/* Hamburger Icon (Visible only on small screens) */
+nav .hamburger {
+  display: none;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav .hamburger:hover {
+  background-color: #444;
+}
+
+/* Mobile menu (Initially hidden) */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    background-color: #333;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .logout-btn{
+    margin-left: 0;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  nav .hamburger {
+    display: block;
+  }
+}
+
+/* Example styles for login/signup and logout buttons */
+.login-signup-btn,
+.logout-btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+}
+
+.login-signup-btn:hover,
+.logout-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* Added animation for logo and menu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation: fadeIn 0.6s ease-out;
+}

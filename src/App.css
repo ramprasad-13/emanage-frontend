@@ -1,0 +1,83 @@
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form select, .react-select__input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+form input {
+  width: 95%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+form select {
+  background-color: white;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.show-cards{
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 280px;
+}
+
+.card button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.card button:hover {
+  background-color: #d32f2f;
+}
+
+/* Scrollable Dropdown (React Select) */
+.react-select__menu {
+  z-index: 9999; /* Ensure dropdown appears above other elements */
+  max-height: 200px; /* Limit dropdown height */
+  overflow-y: auto; /* Make it scrollable */
+}
+
+h1{
+  text-align: center;
+}

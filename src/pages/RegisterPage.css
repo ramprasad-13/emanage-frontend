@@ -1,0 +1,99 @@
+/* RegisterPage.css */
+
+/* Container for the whole register page */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa; /* Light background */
+  }
+  
+  /* Box that holds the form */
+  .register-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Styling for the heading */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Input group styling */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  /* Button styling */
+  .register-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .register-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Footer links styling */
+  .footer-links {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
